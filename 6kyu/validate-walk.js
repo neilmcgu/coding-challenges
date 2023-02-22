@@ -4,34 +4,31 @@
 
 //     Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).
 
-
-
 function isValidWalk(walk) {
-    //insert brilliant code here
-    if(walk.length !== 10){
+  //insert brilliant code here
+  if (walk.length !== 10) {
+    return false
+  }
+
+  let opposite = {
+    n: "s",
+    s: "n",
+    w: "e",
+    e: "w",
+  }
+
+  for (dir in opposite) {
+    let count = walk.filter((e) => e === dir).length
+    let oppositeCount = walk.filter((e) => e === opposite[dir]).length
+
+    console.log(
+      `count ${dir}: ${count}, oppositeCount ${opposite[dir]}: ${oppositeCount}`
+    )
+
+    if (count != oppositeCount) {
       return false
     }
-    
-    let opposite = {
-      'n': 's',
-      's': 'n',
-      'w': 'e',
-      'e': 'w'
-    }
-    
-    for(dir in opposite){
-      let count = walk.filter( e => e === dir).length
-      let oppositeCount = walk.filter( e => e === opposite[dir] ).length
-      
-      console.log(`count ${dir}: ${count}, oppositeCount ${opposite[dir]}: ${oppositeCount}`)
-      
-      if(count != oppositeCount){
-        return false
-      }
-    }
-    
-    return true
-    
-    
-    
   }
+
+  return true
+}
