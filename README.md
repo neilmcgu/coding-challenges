@@ -2,7 +2,7 @@ Code Wars
 
 Some people like to solve Sudokus, some people like to work on Cross Word Puzzles... I like to solve coding challenges. At the beginning of each day I take some time to work through a few code wars challenges to keep my mind sharp.
 
-View My Profile Here: [Code Wars: Neil McGuire]ttps://www.codewars.com/users/neilmcgu)
+View My Profile Here: [Code Wars: Neil McGuire]ttps://www.codewars.com/users/neilmcgu
 
 How It's Made:
 
@@ -15,4 +15,4 @@ I really love when Code Wars gives me a difficult challenge and I have to wrack 
 
 Lessons Learned:
 
-There are many ways to solve the same problems, some of which are more clear than others. I pride myself on completing challenges in as few lines as possible while also maintaining clean, readable code. Sometimes a single line function just doesn't make sense at a glance. I try to avoid confusing anyone who reads my code even if it means a couple of extra lines. 
+There are many ways to solve the same problems, some of which are more clear than others. I pride myself on completing challenges in as few lines as possible while also maintaining clean, readable code. Sometimes a single line function just doesn't make sense at a glance. I try to avoid confusing anyone who reads my code even if it means a couple of extra lines.
