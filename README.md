@@ -10,7 +10,6 @@ Tech used: JavaScript
 
 Challenges 
 
-(optional)
 I really love when Code Wars gives me a difficult challenge and I have to wrack my brain to figure it out. The simple challenges are great for reminding myself how to do basic tasks. So far the hardest challenge I had to complete required recursion which felt great when I finally figured it out.
 
 Lessons Learned:
