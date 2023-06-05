@@ -8,7 +8,6 @@
 
 
 
-
 <span>Tech used: JavaScript </span>
 
 
