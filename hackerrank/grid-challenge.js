@@ -25,3 +25,41 @@ function gridChallenge(grid) {
 
   return alphabetical ? "YES" : "NO";
 }
+
+// Objectified
+// grid challenge
+// given an array of strings such that a grid is made
+// alphebetize the rows of the grid, then check if the columns are also alphabetized
+// if they are, return "YES", otherwise return "NO"
+
+const grid = {
+  input: [],
+  alphabetizeRows() {
+    this.input = this.input.map((row) => {
+      return row.split("").sort().join("");
+    });
+  },
+  getCols() {
+    let cols = [];
+    for (let i = 0; i < this.input.length; i++) {
+      let col = [];
+      for (let j = 0; j < this.input.length; j++) {
+        col.push(this.input[j][i]);
+      }
+      cols.push(col.join(""));
+    }
+    this.cols = cols;
+  },
+  checkCols() {
+    let alphabetical = "YES";
+    this.cols.forEach((col) => {
+      if (col !== col.split("").sort().join("")) alphabetical = "NO";
+    });
+    return alphabetical;
+  },
+};
+
+grid.input = ["dfe", "abc", "hji"];
+grid.alphabetizeRows();
+grid.getCols();
+console.log(grid.checkCols());
