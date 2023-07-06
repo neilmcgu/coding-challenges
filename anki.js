@@ -1,2 +1,1 @@
-let name = "neil";
-console.log(`hello ${name}`);
+// testing user config macbook air
