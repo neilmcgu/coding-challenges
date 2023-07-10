@@ -41,3 +41,7 @@ function charsAreUnique(s){
     })
     return unique
 }
+
+let str = '   '
+str = str.substring(0,4)
+console.log(str.length)
