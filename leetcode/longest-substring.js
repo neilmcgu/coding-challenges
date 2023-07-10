@@ -37,7 +37,7 @@ function charsAreUnique(s){
     s.split('').forEach(char => {
         if(s.split('').indexOf(char) !== s.split('').lastIndexOf(char)){
             unique = false
-        }
+            
     })
     return unique
 }
