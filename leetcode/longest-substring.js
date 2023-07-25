@@ -3,45 +3,21 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function(s) {
-    // given a string s
-    // find the longest substring without repeating characters
-    // return that substring
-    let longest = ''
-
-    // if all characters are unique, return the original string
-    let unique = true
-    s.split('').forEach(char => {
-        if(s.split('').indexOf(char) !== s.split('').lastIndexOf(char)){
-            unique = false
+    let lengthOfLongestSubstring = 0
+    let left = 0
+    let right = 1
+    while(right <= s.length){
+        let substr = s.substring(left,right)
+        if(substr.length > lengthOfLongestSubstring){
+            lengthOfLongestSubstring = substr.length
         }
-    })
-
-    if(unique) return s
-    
-    for(let i = 0; i<s.length; i++){
-        for(let j = 0;j<s.length;j++){
-            let substring = s.substring(i,j)
-            if(substring.length > longest.length && charsAreUnique(substring)){
-                console.log('longest',longest)
-                console.log('substring',substring)
-                longest = substring
-            }
+        if(s[left] === s[right]){
+            left = right
         }
+        right ++
     }
-
-    return longest.length
-};
-
-function charsAreUnique(s){
-    let unique = true
-    s.split('').forEach(char => {
-        if(s.split('').indexOf(char) !== s.split('').lastIndexOf(char)){
-            unique = false
-            
-    })
-    return unique
+    return lengthOfLongestSubstring
 }
 
-let str = '   '
-str = str.substring(0,4)
-console.log(str.length)
+let s = 'aabcdeabcdefabaa'
+console.log(findLongestSubstringWithoutRepeatingChars(s))
