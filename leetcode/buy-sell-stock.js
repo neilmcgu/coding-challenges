@@ -41,3 +41,24 @@ var maxProfit = function(prices) {
     }
     return max_profit
 };
+
+// part two
+// given an array of prices
+// find the maximum profit you can make by buying and selling the stock
+// you are allowed to buy and sell more than one time however you can only hold one of the stock at a time
+// you can buy and sell the stock on the same day if you wish
+// ex: prices = [1,2,3,4,5] => max_profit = 4 because you can buy on day 1 and sell on day 5
+// prices = [1,5,2,7,3,1] => max_profit = 4 + 5 = 9 because you can buy on day 1 and sell on day two, then buy again on day 3 and sell on day 4
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+var maxProfit = function(prices) {
+    let max_profit = 0
+    for(let i = 0; i<prices.length; i++){
+        if(prices[i]<prices[i+1]){
+            max_profit += prices[i+1] - prices[i]
+        }
+    }
+    return max_profit
+};

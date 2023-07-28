@@ -1,30 +1,27 @@
-// super digit
-// find the lowest digit sum of where a = [X1,X2,...Xn)] where string(a[0]..a.length()]) is an input = b
-const superDigit = {
-    superDigit: '',
-    rounding(){
-        this.superDigit = this.superDigit.slice(0,-1)
-    },
-    checkDigit(){
-        if(this.superDigit <= 0){
-            return 'wrong input'
-        }
-        if(this.superDigit.length > 1){
-            this.superDigit.pop()
+// given a string s
+// find the length of the longest substring without repeating characters
+// return the length of that substring
+// ex: s = "abcdefabcdaaccd" => abcdef => 6
+// make two pointers, one at the start and one at start + 1
+// them move the one on the right forward until it equals the value in start
+// record the length of that substring and then move the left to that spot
+function findLongestSubstringWithoutRepeatingChars(s){
 
-            this.checkDigit()
+    let lengthOfLongestSubstring = 0
+    let left = 0
+    let right = 1
+    while(right <= s.length){
+        let substr = s.substring(left,right)
+        if(substr.length > lengthOfLongestSubstring){
+            lengthOfLongestSubstring = substr.length
         }
-
-        return bool
-    },
+        if(s[left] === s[right]){
+            left = right
+        }
+        right ++
+    }
+    return lengthOfLongestSubstring
 }
 
-function superDigit(n = '12345'){
-    let sum = n.split().reduce( (cu,e) => ce+=e,0)
-    let superDigit = String(sum)
-    if(superDigit.length > 1){
-        superDigit.pop()
-        return superDigit(superDigit)
-    }else if(superDigit.length <= 0) return 'invalid arg superDigit not a string of size greater than one of Digits consisting of a whole Number'
-
-}
+let s = 'aabcdeabcdefabaa'
+console.log(findLongestSubstringWithoutRepeatingChars(s))
