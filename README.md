@@ -17,5 +17,5 @@
 <h2>Lessons Learned:</h2>
 
 
-<p>There are many ways to solve the same problems, some of which are more clear than others. I pride myself on completing challenges in as few lines as possible while also maintaining clean, readable code. Sometimes a single line function just doesn't make sense at a glance. I try to avoid confusing anyone who reads my code even if it means a couple of extra lines.</p>
+<p>There are many ways to solve the same problem some of which are more clear than others. I pride myself on completing challenges in as few lines as possible while also maintaining clean, readable code. Sometimes a single line function just doesn't make sense at a glance. I try to avoid confusing anyone who reads my code even if it means a couple of extra lines.</p>
 
