@@ -14,3 +14,7 @@ describe("revrot", function () {
     testing(revrot(s, 5), "330479108928157");
   });
 });
+
+function revrot(str, sz) {
+  // your code
+}
