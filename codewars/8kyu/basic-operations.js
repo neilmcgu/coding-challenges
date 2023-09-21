@@ -12,23 +12,23 @@
 // ('/', 49, 7) --> 7
 
 function basicOp(operation, value1, value2) {
-  let result = 0
+  let result = 0;
   switch (operation) {
     case "+":
-      result = value1 + value2
-      break
+      result = value1 + value2;
+      break;
     case "-":
-      result = value1 - value2
-      break
+      result = value1 - value2;
+      break;
     case "*":
-      result = value1 * value2
-      break
+      result = value1 * value2;
+      break;
     case "/":
-      result = value1 / value2
-      break
+      result = value1 / value2;
+      break;
     default:
-      result = 0
-      break
+      result = 0;
+      break;
   }
-  return result
+  return result;
 }
