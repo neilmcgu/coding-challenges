@@ -8,7 +8,8 @@ return the length of the longest binary gap (binary gap is the number of zeros b
 */
 
 function solution(n) {
-  // how to get binary?
-  // use .toString(2)
   let bin = n.toString(2);
+  console.log(bin);
 }
+
+solution(5);
