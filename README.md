@@ -1,4 +1,5 @@
 <h1>Coding Challenges</h1>
+<span>Neil McGuire</span>
 
 
 <p>Some people like to solve Sudokus, some people like to work on Cross Word Puzzles... I like to solve coding challenges. At the beginning of each day I take some time to work through a few code wars challenges to keep my mind sharp.</p>
