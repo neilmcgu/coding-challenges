@@ -28,7 +28,6 @@ function gps(s, x) {
   let speeds = [];
 
   for (let i = 0; i < distArr.length; i++) {
-    // average speed in seconds = dist/s * 60 * 60
     let averageSpeed = (3600 * distArr[i]) / s;
     speeds.push(averageSpeed);
   }
