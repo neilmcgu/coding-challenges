@@ -9,3 +9,4 @@ function getAge(inputString) {
 const age = (inputString) => {
   parseInt(inputString);
 };
+
