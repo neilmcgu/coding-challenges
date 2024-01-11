@@ -11,7 +11,6 @@
 // twoSum([1, 2, 3], 4) // returns [0, 2] or [2, 0]
 
 function twoSum(numbers, target) {
-    // ...
     for(let i = 0; i<numbers.length; i++){
       for(let j = 0; j<numbers.length; j++){
           if(j !== i ){
