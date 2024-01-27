@@ -7,18 +7,21 @@
 
 // [
 //   "  *  ",
-//   " *** ", 
+//   " *** ",
 //   "*****"
 // ]
 
 // And a tower with 6 floors looks like this:
 
 // [
-//   "     *     ", 
-//   "    ***    ", 
-//   "   *****   ", 
-//   "  *******  ", 
-//   " ********* ", 
+//   "     *     ",
+//   "    ***    ",
+//   "   *****   ",
+//   "  *******  ",
+//   " ********* ",
 //   "***********"
 // ]
 
+function buildTower(numFloors) {
+  if (numFloors < 1) return `invalid input`;
+}
