@@ -24,4 +24,21 @@
 
 function buildTower(numFloors) {
   if (numFloors < 1) return `invalid input`;
+  let output = [];
+  for (let i = 0; i < numFloors; i++) {
+    let star = "*";
+    let space = " ";
+
+    let numStars = 2 * i + 1;
+    let numSpaces = numFloors * 2 - 1 - numStars;
+
+    let string =
+      space.repeat(numSpaces / 2) +
+      star.repeat(numStars) +
+      space.repeat(numSpaces / 2);
+    output.push(string);
+  }
+  return output;
 }
+
+console.log(buildTower(5));
