@@ -5,5 +5,4 @@ function alternateCase(s) {
       char.toLowerCase() === char ? char.toUpperCase() : char.toLowerCase()
     )
     .join("");
-  //   return '';
 }
